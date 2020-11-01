@@ -14,7 +14,7 @@ struct RecipeListView: View {
     
     init() {
         recipes = FetchRequest<Recipe>(entity: Recipe.entity(), sortDescriptors: [
-            NSSortDescriptor(keyPath: \Recipe.creationDate, ascending: false)
+            NSSortDescriptor(keyPath: \Recipe.category, ascending: false)
         ])
     }
     
@@ -23,9 +23,9 @@ struct RecipeListView: View {
             List{
                 ForEach(recipes.wrappedValue){recipe in
                     NavigationLink(
-                        destination: RecipeDetailView(),
+                        destination: RecipeDetailView(recipe: Recipe.example),
                         label: {
-                            Text(recipe.recipeName)
+                            RecipeRow(recipe: recipe)
                         })
                         
                 }
@@ -36,6 +36,9 @@ struct RecipeListView: View {
             
             .listStyle(InsetGroupedListStyle())
             .navigationTitle("Recipes")
+            .navigationBarItems(trailing:Button(action:{
+                
+            }){Image(systemName: "plus")})
             
         }
     }

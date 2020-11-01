@@ -55,6 +55,7 @@ class DataController: ObservableObject{
     }
     
     
+    static let categories = ["Sanwich", "Sauce", "Side Dish", "Main Dish"]
     
     func CreateSampleData()throws{
         let viewContext = container.viewContext
@@ -65,6 +66,7 @@ class DataController: ObservableObject{
             recipe.instructions = []
             recipe.isFavorite = Bool.random()
             recipe.creationDate = Date()
+            recipe.category = DataController.categories[Int.random(in: 0...3)]
             for j in 1...Int.random(in: 2...5) {
                 let ingredient = Ingredient(context: viewContext)
                 ingredient.recipe = recipe

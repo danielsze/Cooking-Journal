@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B110EB31254F414F000CF63C /* RecipeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110EB30254F414F000CF63C /* RecipeRow.swift */; };
 		B128F73A254EED1000E96E07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128F739254EED1000E96E07 /* ContentView.swift */; };
 		B128F73E254EEEE300E96E07 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128F73D254EEEE300E96E07 /* RecipeDetailView.swift */; };
 		B12B4A6F254F34EF00739C6F /* Recipe-CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12B4A6E254F34EF00739C6F /* Recipe-CoreDataHelper.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B110EB30254F414F000CF63C /* RecipeRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeRow.swift; sourceTree = "<group>"; };
 		B128F739254EED1000E96E07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B128F73D254EEEE300E96E07 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 		B12B4A6E254F34EF00739C6F /* Recipe-CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe-CoreDataHelper.swift"; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 			children = (
 				B13090D0254DDA5D00B12194 /* RecipeListView.swift */,
 				B128F739254EED1000E96E07 /* ContentView.swift */,
+				B110EB30254F414F000CF63C /* RecipeRow.swift */,
 				B128F73D254EEEE300E96E07 /* RecipeDetailView.swift */,
 				B1C3FD74254EF1770074CEBE /* HomeView.swift */,
 			);
@@ -187,6 +190,7 @@
 				B1C3FD75254EF1770074CEBE /* HomeView.swift in Sources */,
 				B128F73E254EEEE300E96E07 /* RecipeDetailView.swift in Sources */,
 				B12B4A6F254F34EF00739C6F /* Recipe-CoreDataHelper.swift in Sources */,
+				B110EB31254F414F000CF63C /* RecipeRow.swift in Sources */,
 				B128F73A254EED1000E96E07 /* ContentView.swift in Sources */,
 				B12B4A72254F350500739C6F /* Ingredient-CoreDataHelper.swift in Sources */,
 				B13090E4254DDB8F00B12194 /* DataController.swift in Sources */,
