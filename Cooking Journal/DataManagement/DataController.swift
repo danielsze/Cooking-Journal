@@ -60,16 +60,20 @@ class DataController: ObservableObject{
         let viewContext = container.viewContext
         for i in 1...5 {
             let recipe = Recipe(context: viewContext)
-            recipe.name = "Project \(i)"
+            recipe.name = "Recipe \(i)"
             recipe.ingredients = []
-            recipe.creationDate = Date()
+            recipe.instructions = []
             recipe.isFavorite = Bool.random()
-            for j in 1...10 {
+            recipe.creationDate = Date()
+            for j in 1...Int.random(in: 2...5) {
                 let ingredient = Ingredient(context: viewContext)
                 ingredient.recipe = recipe
-                ingredient.name = "Item \(j)"
+                ingredient.name = "Ingredient \(j)"
                 ingredient.quantity = "\(j) units"
                 
+            }
+            for j in 1...Int.random(in: 3...7){
+                recipe.instructions?.append("Instructional step \(j)")
             }
         }
         try viewContext.save()

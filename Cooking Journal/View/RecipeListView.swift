@@ -24,7 +24,7 @@ struct RecipeListView: View {
                     NavigationLink(
                         destination: RecipeDetailView(),
                         label: {
-                            Text(recipe.name ?? "")
+                            Text(recipe.recipeName)
                         })
                         
                 }
