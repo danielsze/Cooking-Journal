@@ -10,6 +10,7 @@ import SwiftUI
 struct RecipeListView: View {
     
     let recipes : FetchRequest<Recipe>
+    static let tag : String? = "recipelistview"
     
     init() {
         recipes = FetchRequest<Recipe>(entity: Recipe.entity(), sortDescriptors: [

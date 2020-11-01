@@ -12,6 +12,8 @@ struct HomeView: View {
     
     @EnvironmentObject var dataController: DataController
     
+    static let tag : String? = "homeview"
+    
     var body: some View {
         Button(action: {
             dataController.DeleteAll()
